@@ -18,10 +18,11 @@ body {
 
 .jumbotron {
 	position: relative;
-	background: none;
+	background: linear-gradient(to bottom right, #acb6e5, #86fde8);
+     color: white;
 }
 
-.jumbotron:after {
+/*.jumbotron:after {
      content:"";
      background: url("http://lorempixel.com/1140/283");
      opacity: 0.2;
@@ -31,4 +32,57 @@ body {
      right: 0;
      position: absolute;
      z-index: -1;	
+}*/
+
+html {
+     font-family: sans-serif;
+}
+
+h4 {
+     margin-bottom: 20px;
+}
+
+h2 {
+     margin-bottom: 0.5em;
+}
+
+.project {
+     position: relative;
+     border: 1px solid rgba(0,0,0,0.1);
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+     transition: 0.1s;
+}
+
+.project + .project {
+     margin-top: 20px;
+}
+
+.project>a {
+     text-align: center;
+     text-decoration: none;
+}
+
+.project>a>p {
+     position: absolute;
+     color: white;
+     font-size: 1.5em;
+     font-weight: 600;
+     bottom: 0.5em;
+     left: 1em;
+     font-weight: 500;
+}
+
+.project:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.header {
+     text-align: center;
+}
+
+.img {
+     width: 100%;
 }
